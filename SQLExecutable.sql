@@ -1,0 +1,1 @@
+CREATE INDEX idx_GlobalStops_search ON stops(commonName, stopNumber, townName);

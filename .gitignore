@@ -1,0 +1,32 @@
+# ==========================================
+# Raw & Uncompressed Data (Block Heavy Files)
+# ==========================================
+*.csv
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.json
+*.txt
+
+# Ignore entire raw databases directory if uncompressed
+databases/*.db
+FR/*.csv
+
+# ==========================================
+# Keep Compressed Data Files (Allowed in Git)
+# ==========================================
+!*.db.gz
+!*.csv.gz
+
+# ==========================================
+# Python & Temporary Build Files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+*.log
+
